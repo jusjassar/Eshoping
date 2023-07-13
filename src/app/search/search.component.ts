@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./search.component.css']
 })
 export class SearchComponent implements OnInit {
-
+  searchstrEntered:string='Iphone'
   constructor() { }
 
   ngOnInit(): void {
@@ -14,5 +14,6 @@ export class SearchComponent implements OnInit {
   }
   searchStr(data:Event){
       console.log((<HTMLInputElement>data.target).value)
+      this.searchstrEntered=(<HTMLInputElement>data.target).value
   }
 }
