@@ -11,5 +11,8 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  // string interpolation
   slogan:string ="Your one stop shop for everything."
+  // vedio 15 property Binding;
+  source:string="/assets/shopping.jpg"
 }

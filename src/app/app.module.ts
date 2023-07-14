@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
@@ -7,6 +7,8 @@ import { NavComponent } from './nav/nav.component';
 import { HeaderComponent } from './header/header.component';
 import { NotificationComponent } from './notification/notification.component';
 import { FormsModule } from '@angular/forms';
+import { SearchComponent } from './search/search.component';
+import { ProductsComponent } from './products/products.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +17,8 @@ import { FormsModule } from '@angular/forms';
     NavComponent,
     HeaderComponent,
     NotificationComponent,
+    SearchComponent,
+    ProductsComponent,
   ],
   imports: [
     BrowserModule,
