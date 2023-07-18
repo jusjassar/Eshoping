@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-notification',
-  template: `<div class="alert alert-success" [hidden]="displayNotification"> 
+  template: `<div class="alert alert-success" [ngClass]="{fadeOut: displayNotification}"> 
                 This website uses cookies to provide better user experience.
                 <div class="close">
                   <button class="btn" (click)="notificationClose()">X</button>
