@@ -1,5 +1,6 @@
-<div>
+<div [ngClass]="{isNotEmpty: searchstrEntered!= '' }">
     <span>Search  : </span>
-    <input type="text" [(ngModel)]="searchstrEntered">
+    <input type="text" [(ngModel)]="searchstrEntered" 
+    >
     <span>  You Searched for : {{searchstrEntered}}</span>
 </div>
